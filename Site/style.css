@@ -1,0 +1,956 @@
+/* CSS for the whole site */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentContainer{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS for the heading sections of all pages but and the homepage */
+.homeHeader{
+    height: 800px;
+    background-image: url(assets/headerImage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    padding-top: 20px;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.rightNav{
+    margin-left: 30px;
+    border-bottom: 0px solid;
+    -webkit-transition:border-bottom 0.5s;
+}
+
+.active{
+    border-bottom:2px solid white;
+}
+
+.smallA{
+    margin-left: 2px;
+    font-size: 12px;
+}
+
+.largeText{
+    font-size: 16px;
+}
+
+#largerFont{
+    font-size: 16px !important;
+}
+
+.smallText{
+    font-size: 12px;
+}
+
+.colour{
+    height: 20px;
+    margin-left: 10px;
+    width: 30px;
+    background-color: #2B0F0E;
+    border: 0;
+}
+
+.colourBlue{
+    height: 20px;
+    margin-left: 10px;
+    width: 30px;
+    background-color: #000080;
+    border: 0;
+}
+
+.headerBrownButton{
+    background-image: url(assets/headerImage.jpg);
+    background-size: cover;
+    height: 20px;
+    margin-left: 10px;
+    width: 30px;
+    border: 0;
+}
+
+.addColour{
+    background-color: #2B0F0E;
+    background-attachment: scroll;
+}
+
+.addColourBlue{
+    height: 100px;
+    background-color: #000080;
+}
+
+.rightNav:hover{
+    border-bottom: 2px solid white;
+}
+
+#rightList{
+    padding-top: 35px;
+}
+
+.title{
+    font-size: 30px
+}
+
+nav ul:first-child{ 
+    float: left; 
+}
+
+nav ul{ 
+    list-style:none;
+    margin:10px;
+    float: right; 
+}
+
+.slogon{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.slogonSection{
+    padding-top: 300px;
+}
+
+#arrowDown{
+    opacity: 0.6;
+    -webkit-transition:opacity 0.5s;
+    padding-bottom: 10px;
+}
+
+#arrowDown:hover{
+    opacity: 1;
+}
+
+.imageSection{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    width: 50px;
+    z-index: -1;
+}
+
+.mainHeader{
+    height: 100px;
+    background-color: #2B0F0E;
+}
+
+/* CSS for the headings of all pages but the homepage */
+
+.pageName{
+    height: 200px;
+    border-bottom: 1px solid #2B0F0E;
+}
+
+#pageNameText{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 40px;
+    color: black;
+}
+
+/* CSS for top section of photo and text */
+.firstSection{
+    height: 450px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coffeePhotos{
+    width: 500px;
+    opacity: 1;
+    -webkit-transition:opacity 0.6s;
+}
+
+.coffeePhotos:hover{
+    background-color: white;
+    opacity: 0.6;
+}
+
+#photosEnlarge{
+    width: 500px;
+    opacity: 1;
+    -webkit-transition:opacity 0.6s;
+}
+
+#photosEnlarge:hover{
+    background-color: white;
+    opacity: 0.6;
+}
+
+.photo{
+    float: left;
+    border: 2px solid;
+    margin-top: 50px;
+}
+
+#photos{
+    float: left;
+    border: 2px solid;
+    margin-top: 60px;
+}
+
+.productPhotos{
+    width: 100% !important;
+}
+
+.productPhotosSection{
+    position: fixed;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -120px !important;
+    z-index: 4;
+}
+
+/* CSS for the back button that appears when the product photo is enlarged on the product pages */
+#backButton{
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    width: 200px;
+    height: 80px;
+    margin-left: -100px;
+    background-color: white;
+    z-index: 3;
+    text-align: center;
+}
+
+#backButtonText{
+    color: black;
+    line-height: 75px;
+}
+
+/* CSS to dim the screen when the prodcut photos are enlarged on the product pages */
+#dimScreen{
+    width: 100%;
+    height: 120%;
+    margin-top: -140px;
+    position: fixed;
+    background-color: black;
+    opacity: 0.80;
+}
+
+.coffeeText{
+    float: right;
+    width: 550px;
+    margin-top: 60px;
+}
+
+.coffeeParagraph{
+    margin-top: 20px;
+    height: 110px;
+}
+
+.lightButton{
+    margin-top: 120px;
+    width: 160px;
+    height: 60px;
+    background-color: #2B0F0E;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 6px;
+    opacity: 1;
+    -webkit-transition:opacity 0.6s;
+}
+
+.lightButton:hover{
+    opacity: 0.6
+}
+
+/* CSS for the price display on the product pages */
+#priceDisplay{
+    margin-top: 80px;
+    width: 160px;
+    height: 60px;
+    background-color: #2B0F0E;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 6px;
+}
+
+/* CSS for the audio player on the product pages */
+#audio{
+    margin-top: 10px;
+}
+
+/* CSS for the dropdown menu of currency options on the product pages */
+#currencyDropdown{
+    width: 160px;
+    height: 59px;
+    font-size: 20px;
+    background-color: #2B0F0E;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+}
+
+/* CSS for the canvas */
+#mycanvas{
+    width: 1200px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom: 2px solid #2B0F0E;
+}
+
+/* CSS for the second section of photo and text */
+
+.secondSection{
+    background-color: #2B0F0E;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+}
+
+.secondPhoto{
+    float: left;
+    border: 2px solid white;
+    margin-top: 60px;
+}
+
+.darkText{
+    color: white;
+    float: right;
+    width: 550px;
+    margin-top: 60px;
+}
+
+.darkButton{
+    margin-top: 120px;
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: 0;
+    border-radius: 6px;
+    opacity: 1;
+    -webkit-transition:opacity 0.6s;
+}
+
+.darkButton:hover{
+    opacity: 0.6
+}
+
+.divider{
+    border-bottom: 1px solid #2B0F0E;
+}
+
+/* CSS for the video on the product pages */
+
+.videoSection{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#video{
+    width: 100%;
+}
+
+#videoButtonBackgroundPlay{
+    width: 100%;
+    background-color: #2B0F0E;
+    height: 60px;
+    padding-top: 7px;
+}
+
+.videoButtonsVisabilityHidden{
+    background-image: url(assets/pause.png);
+    background-size: cover;
+}
+
+.videoButtonsVisiabilityShow{
+    background-image: url(assets/play.png);
+    background-size: cover;
+}
+
+#imageAlignment{
+    width: 50px;
+    margin-left: 30px;
+    height: 50px;
+}
+
+#seekbar{
+    float: right;
+    width: 85%;
+    margin-right: 30px;
+    margin-top: -32px;
+    -webkit-appearance: none;
+    background: white;
+}
+
+#seekbar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 15px;
+    background: #2B0F0E;
+}
+
+/* CSS for the audio player on the product pages */
+#audioButtonBackgroundPlay{
+    width: 50%;
+    background-color: #2B0F0E;
+    height: 30px;
+    padding-top: 7px;
+}
+
+.audioButtonsVisabilityHidden{
+    background-image: url(assets/pause.png);
+    background-size: cover;
+}
+
+.audioButtonsVisiabilityShow{
+    background-image: url(assets/play.png);
+    background-size: cover;
+}
+
+#imageAudioAlignment{
+    width: 20px;
+    margin-left: 10px;
+    height: 20px;
+}
+
+#audioSeekbar{
+    float: right;
+    width: 75%;
+    margin-right: 22px;
+    margin-top: -22px;
+    -webkit-appearance: none;
+    background: white;
+}
+
+#audioSeekbar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 15px;
+    background: #2B0F0E;
+}
+
+
+/* CSS for the about page */
+#galleryHeading{
+    text-align: center;
+    margin: 50px;
+}
+
+#galleryLayer2{
+    margin-bottom: 40px;
+}
+
+.galleryImage{
+    width: 33%;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.galleryImage:hover{
+    opacity: 0.6;
+}
+
+.mapSection{
+    height: 600px;
+}
+
+#actualMap{
+    width: 100%;
+    border: 0;
+}
+
+#map{
+    float: left;
+    border: 2px solid;
+    margin-top: 60px;
+    width: 600px;
+}
+
+#AddressText{
+    float: right;
+    width: 300px;
+    margin-top: 60px;
+}
+
+/* CSS for the footer on all pages */
+footer{
+    background-color: #2B0F0E;
+    width: 100%;
+    height: 180px;
+    margin-top: -1px;
+}
+
+#footerMenu{
+    width: 1200px;
+    height: 30px;
+    padding-top: 30px;
+}
+
+.footerLink{
+    width: 250px;
+    margin-left: 200px;
+    padding-top: 20px;
+    border-bottom: 0px Solid;
+    -webkit-transition:border-bottom 0.5s;
+}
+
+.footerLink:hover{
+    border-bottom: 2px solid White;
+}
+
+/* CSS for the social media icons on all pages */
+#socialIcons{
+    width: 137px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#instagram{
+    background: url(assets/instagram.png);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-size: cover;
+    margin-right: 5px;
+    opacity: 1;
+    -webkit-transition:opacity 0.5s;
+    display: inline-block;
+}
+
+#instagram:hover{
+    opacity: 0.6;
+}
+
+#facebook{
+    background: url(assets/facebook.png);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-size: cover;
+    margin-right: 5px;
+    -webkit-transition:opacity 0.5s;
+    display: inline-block;
+}
+
+#facebook:hover{
+    opacity: 0.6;
+}
+
+#twitter{
+    background: url(assets/twitter.png);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-size: cover;
+    -webkit-transition:opacity 0.5s;
+    display: inline-block;
+}
+
+#twitter:hover{
+    opacity: 0.6;
+}
+
+#weatherText{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* CSS for the form on all the pages */
+#form{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1;
+}
+
+form{
+    border: 6px solid #2B0F0E; 
+    padding: 2em;
+    width: 400px;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    opacity: 1;
+    z-index: 1;
+}
+
+#exit{
+    float: right;
+    margin-top: -20px;
+    width: 50px;
+    height: 20px;
+    background-color: #2B0F0E;
+    border: none;
+    color: white;
+}
+
+input{
+    border: 2px solid #2B0F0E;
+    width: 60%;
+    height: 20px
+}
+
+#submit{
+    margin-top: 15px;
+    width: 250px;
+    height: 20px;
+    background-color: #2B0F0E;
+    border: none;
+    color: white;
+}
+
+/* CSS styles to take effect when the page is 1199 pixels or less */
+@media screen and (max-width: 1199px) {
+   
+    .firstSection{
+        width: 100%;
+    }
+    
+    .contentContainer{
+        width: 100%;
+    }
+    
+    .photo{
+        width: 300px;
+        margin-top: 120px;
+        margin-left: 4px;
+    }
+    
+    #photos{
+        width: 300px;
+        margin-top: 120px;
+        margin-left: 4px;
+    }
+    
+    .secondPhoto{
+        margin-left: 4px;
+    }
+    
+    .coffeePhotos{
+        width: 300px;
+    }
+    
+    #photosEnlarge{
+        width: 300px;
+    }
+    
+    .productPhotosSection{
+        position: fixed;
+        width: 50% !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: -160px !important;
+        z-index: 4;
+    }
+    
+    .productPhotos{
+        width: 100% !important;
+    }
+    
+    #footerMenu{
+        width: 100%;
+        height: 30px;
+        padding-top: 30px;
+    }
+    
+    .footerLink{
+        width: 25%;
+        padding-left: 16%;
+        margin-left: 0;
+    }
+    
+    .coffeeText{
+        margin-right: 10px;
+        word-wrap: break-word;
+    }
+    
+    .darkText{
+        margin-right: 10px;
+    }
+    
+    .videoSection{
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+    #map{
+        float: none;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mapSection{
+        height: 800px;
+    }
+    
+    #AddressText{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* CSS styles to take effect when the page is 875 pixels or less */
+@media screen and (max-width: 875px) {
+    html{
+        margin-top: -10px;
+    }
+    .container{
+        width: 100%;
+    } 
+    
+    form{
+        width: 80%;
+    }
+    
+    input{
+        width: 80%;
+    }
+    
+    #submit{
+        width: 80%;
+    }
+    
+    li{
+        display: block;
+        text-align: center;
+    }
+    
+    a{
+        height: 20px;
+    }
+    
+    nav ul:first-child{ 
+        float: none; 
+    }
+
+    nav ul{ 
+        list-style:none;
+        float: none; 
+    }
+    
+    .homeHeader{
+        height: 600px;
+    }
+    
+    .mainHeader{
+        height: 300px;
+    }
+    
+    .addColourBlue{
+        height: 300px;
+    }
+    
+    .rightNav{
+        margin-left: 0px;
+    }
+    
+    .colour{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .headerBrownButton{
+        background-image: url(assets/headerImage.jpg);
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .colourBlue{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    #rightList{
+        padding-top: 0px;
+        margin-top: -10px;
+    }
+    
+    .slogonSection{
+        margin-top: 150px;
+        padding-top: 0px;
+        font-size: 10px;
+    }
+    
+    .slogon{
+        font-size: 40px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    .firstSection{
+        min-height: 870px;
+    }
+    
+    .secondSection{
+        min-height: 860px;
+        margin-bottom: 0px;
+        margin-top: -20px;
+    }
+    
+    .imageSection{
+        margin-top: 90px;
+        width: 50px;
+        z-index: -1;
+    }
+    
+    .photo{
+        width: 80%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    
+    #photos{
+        width: 80%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    
+    .secondPhoto{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    
+    .productPhotosSection{
+        width: 80% !important; 
+        margin-top: -280px !important;
+    }
+    
+    .productPhotos{
+        width: 100% !important;
+    }
+    
+    .coffeePhotos{
+        width: 100%;  
+    }
+    
+    #photosEnlarge{
+        width: 100%;
+    }
+
+    .coffeeText{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 90%;
+    }
+    
+    .darkText{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 90%;
+    }
+    
+    #seekbar{
+        width: 70%;
+        margin-top: -25px;
+    }
+    
+    #audioSeekbar{
+        width: 80%;
+    }
+    
+    #videoButtonBackgroundPlay{
+        height: 40px;
+    }
+    
+    #audioButtonBackgroundPlay{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    #imageAlignment{
+        width: 30px;
+        margin-left: 5px;
+        height: 30px;
+    }
+    
+    .gallery{
+        width: 100%;
+    }
+    
+    .galleryImage{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #footerMenu{
+        height: 60px;
+        width: 100%;
+    }
+    
+    .footerLink{
+        width: 5px;
+        margin-left: -10px;
+        padding-top: 0px;
+        padding-left: 0;
+    }
+    
+    footer{
+        height: 220px;
+    }
+}

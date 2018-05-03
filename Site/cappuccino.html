@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<!-- Start of the head section -->      
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>City Coffee - Cappuccino</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript" defer></script>    
+</head>
+<!-- End of the head section -->     
+    
+<body>
+    
+    <!-- Start of the form section -->
+    <section id="form">
+        <form id="mailingListForm">
+            <button id="exit" type="button">X</button>
+            First name:<br/>
+            <input type="text" name="firstname" id="firstName"><br>
+            Last name:<br/>
+            <input type="text" name="lastname" id="lastName"><br>
+            Email:<br/>
+            <input type="email" name="emailaddress" id="email">
+            <br/>
+            <button id="submit" type="button">Register</button>
+            
+            <p id="responsePost"></p>
+        </form>
+    </section>
+    <!-- End of the form section -->
+    
+    <!-- Start of the header section -->
+    <header class="mainHeader">
+        <!-- Start of the navigation section -->
+        <nav class="container">
+            <ul>
+                <li><a href="index.html" class="title">City Coffee</a></li>
+            </ul>    
+            <ul id="rightList">
+                <li><a href="index.html" class="rightNav">Home</a></li>
+                <li><a href="about.html" class="rightNav">About</a></li>
+                <li><a href="menu.html" class="rightNav">Menu</a></li>
+                <li><a href="#" class="rightNav" id="contact">Contact</a></li>
+                <li><a href="#" class="rightNav" id="largerFont">A</a></li>
+                <li><a href="#" class="rightNav smallA" id="smallFont">A</a></li>
+                <li><button class="colourBlue rightNav" id="blueAdd" type="button"></button></li>
+            </ul>
+        </nav>  
+        <!-- End of the navigation section -->
+    </header>    
+    <!-- End of the header section -->
+    
+    <!-- Back button for the lightbox gallery -->
+    <div id="backButton"><a id="backButtonText">Back</a></div>
+    <div id="dimScreen"></div>
+    
+    <!-- Start of the canvas -->
+    <canvas id="mycanvas">Canvas Not Supported
+    </canvas>
+   
+    <!-- Start of the main section of content -->
+    <main>
+        <!-- Start of the first section -->
+        <section class="firstSection">
+            <div class="contentContainer">
+                <div id="photos" class="productPictures">
+                    <img src="assets/coffeeShopOne.jpg" id="photosEnlarge" alt="Pouring a coffee into a cup">
+                </div>    
+
+                <aside class="coffeeText">
+                    <h1 class="coffeeHeader">The Best Cappuccino Shop In The City</h1>
+
+                    <p class="coffeeParagraph">Our cappuccino's are all about balance. This means getting the right mix of steamed milk, frothed milk and espresso. We will make sure this will be a drink to remember. The drink can be enjoyed in or placed into a take away cup for on the go use.</p>
+                    
+                    <div id="audio">
+                        <audio id="audioTrack">
+                            <source src="assets/AmbientNoise.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        
+                        <div id="audioButtonBackgroundPlay">
+                            <div id="imageAudioAlignment">
+                    
+                            </div>    
+                            <input type="range" min="0" max="100" value="0" step="1" id="audioSeekbar">
+                        </div>
+                    </div>    
+                    
+                    <button id="priceDisplay">$2.99</button>
+                    <select id="currencyDropdown">
+                        <option value="USD" selected="selected">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </aside>
+            </div>    
+        </section>
+        <!-- End of the first section -->
+        
+        <!-- Start of the second section -->
+        <section class="videoSection">
+            <video id="video">
+                <source src="assets/cappuccino.mp4" />
+                Video Not Avliable
+            </video>
+            
+            <div id="videoButtonBackgroundPlay">
+                <div id="imageAlignment">
+                    
+                </div>    
+                <input type="range" min="0" max="100" value="0" step="1" id="seekbar">
+            </div>
+        </section>
+        <!-- End of the second section -->    
+    </main>
+    <!-- End of the main section -->
+        
+    <!-- Start of the footer section -->
+    <footer>
+        <div class="contentContainer">
+            <ul id="footerMenu">
+                <li><a href="index.html" class="footerLink">Home</a></li>
+                <li><a href="about.html" class="footerLink">About</a></li>
+                <li><a href="menu.html" class="footerLink">Menu</a></li>
+                <li><a href="#" class="footerLink" id="contactFooter">Contact</a></li>
+            </ul>
+        </div>
+            
+        <section id="socialIcons">
+            <a id="instagram" href="https://www.instagram.com" target="_blank"></a>
+            <a id="facebook" href="https://facebook.com" target="_blank"></a>
+            <a id="twitter" href="https://twitter.com" target="_blank"></a>
+        </section>
+            
+        <section id="weather">
+            <h4 id="weatherText"></h4>
+        </section>
+    </footer>
+    <!-- End of the footer section -->
+</body>
+</html>

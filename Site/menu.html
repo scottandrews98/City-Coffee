@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Start of the head section -->      
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>City Coffee - Menu</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript" defer></script>    
+</head>
+<!-- End of the head section -->    
+
+<body>
+    
+    <!-- Start of the form section -->
+    <section id="form">
+        <form id="mailingListForm">
+            <button id="exit" type="button">X</button>
+            First name:<br/>
+            <input type="text" name="firstname" id="firstName"><br>
+            Last name:<br/>
+            <input type="text" name="lastname" id="lastName"><br>
+            Email:<br/>
+            <input type="email" name="email" id="email">
+            <br/>
+            <button id="submit" type="button">Register</button>
+            
+            <p id="responsePost"></p>
+        </form>
+    </section>
+    <!-- End of the form section -->
+    
+    <!-- Start of the header section -->
+    <header class="mainHeader">
+        <!-- Start of the navigation section -->
+        <nav  class="container">
+            <ul>
+                <li><a href="index.html" class="title">City Coffee</a></li>
+            </ul>    
+            <ul id="rightList">
+                <li><a href="index.html" class="rightNav">Home</a></li>
+                <li><a href="about.html" class="rightNav">About</a></li>
+                <li><a href="menu.html" class="rightNav active">Menu</a></li>
+                <li><a href="#" class="rightNav" id="contact">Contact</a></li>
+                <li><a href="#" class="rightNav" id="largerFont">A</a></li>
+                <li><a href="#" class="rightNav smallA" id="smallFont">A</a></li>
+                <li><button class="colourBlue rightNav" id="blueAdd" type="button"></button></li>
+            </ul>
+        </nav>  
+        <!-- End of the navigation section -->
+    </header>    
+    <!-- End of the header section -->
+    
+    <!-- Start of the page name section -->
+    <section class="pageName">
+        <h1 id="pageNameText">Menu</h1>
+    </section>
+    <!-- End of the page name section -->
+    
+    <!-- Start of the main section of content -->
+    <main>
+        
+        <!-- Start of the first section -->
+        <section class="firstSection divider">
+            <div class="contentContainer">
+                <div class="photo">
+                    <img src="assets/gallery1.jpeg" class="coffeePhotos" alt="Friends enjoying a cup of coffee outside">
+                </div>    
+
+                <aside class="coffeeText">
+                    <h1 class="coffeeHeader">Cappuccino</h1>
+
+                    <p class="coffeeParagraph">Our cappuccino's are all about balance. This means getting the right mix of steamed milk, frothed milk and espresso. We will make sure this will be a drink to remember. The drink can be enjoyed in or placed into a take away cup for on the go use.</p>
+                    
+                    
+                    <button class="lightButton" onclick="location.href='cappuccino.html'">More Infomation</button>
+                </aside>
+            </div>    
+        </section>
+        <!-- End of the first section -->
+        
+        <!-- Start of the second section -->
+        <section class="firstSection divider">
+            <div class="contentContainer">
+                <div class="photo">
+                    <img src="assets/gallery2.jpeg" class="coffeePhotos" alt="Pouring milk into a black coffee">
+                </div>    
+
+                <aside class="coffeeText">
+                    <h1 class="coffeeHeader">Latte</h1>
+
+                    <p class="coffeeParagraph">An espresso drink that consists of espresso, steamed milk, and foam. In a latte there is a greater percentage of steamed milk than foam.</p>
+                    
+                    
+                    <button class="lightButton" onclick="location.href='latte.html'">More Infomation</button>
+                </aside>
+            </div>    
+        </section>
+        <!-- End of the second section -->
+        
+        <!-- Start of the third section -->
+        <section class="firstSection divider">
+            <div class="contentContainer">
+                <div class="photo">
+                    <img src="assets/gallery3.jpeg" class="coffeePhotos" alt="Pouring milk into a latte">
+                </div>    
+
+                <aside class="coffeeText">
+                    <h1 class="coffeeHeader">Americano</h1>
+
+                    <p class="coffeeParagraph">Our Americanos need to be seen to be enjoyed. A cup filled with hot water and topped with espresso shots. An americano is an alternative to a regular cup of coffee and usually is more flavorful.</p>
+                    
+                    
+                    <button class="lightButton" onclick="location.href='americano.html'">More Infomation</button>
+                </aside>
+            </div>    
+        </section>
+        <!-- End of the third section -->
+    </main>    
+    <!-- End of the main section -->
+    
+    <!-- Start of the footer section -->
+    <footer>
+        <div class="contentContainer">
+            <ul id="footerMenu">
+                <li><a href="index.html" class="footerLink">Home</a></li>
+                <li><a href="about.html" class="footerLink">About</a></li>
+                <li><a href="menu.html" class="footerLink">Menu</a></li>
+                <li><a href="#" class="footerLink" id="contactFooter">Contact</a></li>
+            </ul>
+        </div>
+            
+        <section id="socialIcons">
+            <a id="instagram" href="https://www.instagram.com" target="_blank"></a>
+            <a id="facebook" href="https://facebook.com" target="_blank"></a>
+            <a id="twitter" href="https://twitter.com" target="_blank"></a>
+        </section>
+        
+        <section id="weather">
+                <h4 id="weatherText"></h4>
+        </section>
+    </footer>
+    <!-- End of the footer section -->
+</body>
+</html>

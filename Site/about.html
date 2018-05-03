@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Start of the head section -->     
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>City Coffee - About</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript" defer></script>    
+</head>
+<!-- End of the head section -->      
+
+<body>
+    
+    <!-- Start of the form section -->
+    <section id="form">
+        <form id="mailingListForm">
+            <button id="exit" type="button">X</button>
+            First name:<br/>
+            <input type="text" name="firstname" id="firstName"><br>
+            Last name:<br/>
+            <input type="text" name="lastname" id="lastName"><br>
+            Email:<br/>
+            <input type="email" name="emailaddress" id="email">
+            <br/>
+            <button id="submit" type="button">Register</button>
+            
+            <p id="responsePost"></p>
+        </form>
+    </section>
+    <!-- End of the form section -->
+    
+    <!-- Start of the header section -->
+    <header class="mainHeader">
+        <!-- Start of the navigation section -->
+        <nav  class="container">
+            <ul>
+                <li><a href="index.html" class="title">City Coffee</a></li>
+            </ul>    
+            <ul id="rightList">
+                <li><a href="index.html" class="rightNav">Home</a></li>
+                <li><a href="about.html" class="rightNav active">About</a></li>
+                <li><a href="menu.html" class="rightNav">Menu</a></li>
+                <li><a href="#" class="rightNav" id="contact">Contact</a></li>
+                <li><a href="#" class="rightNav" id="largerFont">A</a></li>
+                <li><a href="#" class="rightNav smallA" id="smallFont">A</a></li>
+                <li><button class="colourBlue rightNav" id="blueAdd" type="button"></button></li>
+            </ul>
+        </nav>    
+        <!-- End of the navigation section -->
+    </header>    
+    <!-- End of the header section -->
+    
+    <!-- Start of the canvas -->
+    <canvas id="mycanvas">Canvas Not Supported
+    </canvas>
+    
+    <!-- Start of the main section of content -->
+    <main>
+        <!-- Start of the gallery section -->
+        <section class="gallery contentContainer">
+            <h2 id="galleryHeading">A Few Pictures Of The Shop</h2>
+            
+            
+            <div id="galleryLayer">
+                <img src="assets/gallery1.jpeg" alt="milk being poured into coffee cup" class="galleryImage"/>
+                <img src="assets/gallery2.jpeg" alt="friends enjoying coffee" class="galleryImage"/>
+                <img src="assets/gallery3.jpeg" alt="milk being poured into espresso cup" class="galleryImage"/>
+            </div>
+            
+            <div id="galleryLayer2">
+                <img src="assets/gallery4.jpeg" alt="person doing work and drinking coffee by laptop" class="galleryImage"/>
+                <img src="assets/gallery5.jpeg" alt="guy pouring milk into coffee cup" class="galleryImage"/>
+                <img src="assets/gallery6.jpeg" alt="worker holding coffee cup" class="galleryImage"/>
+            </div>
+        </section>
+        <!-- End of the gallery section -->
+        
+        <!-- Start of the map section -->
+        <section class="mapSection">
+            <div class="contentContainer">
+                <div id="map">
+                    <iframe id="actualMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.7618470252208!2d-2.2231572780133564!3d52.194042197082545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd239ddb2796e4fd!2sFRANCINI+CAFE+DE+COLOMBIA!5e0!3m2!1sen!2suk!4v1519828325166" height="450" allowfullscreen></iframe>
+                </div>    
+
+                <aside id="AddressText">
+                    <h1 id="coffeeHeader">Where Are We Located</h1>
+
+                    <p>14 Angel Place</p>
+                    <p>Worcester</p>
+                    <p>Worcestershire</p>
+                    <p>WR1 3QN</p>
+                    
+                    <p>Mon - Fri: 9AM - 6PM</p>
+                    <p>Sat - Sun: 9AM - 6PM</p>
+                    
+                </aside>
+            </div>    
+        </section>
+        <!-- End of the map section -->
+    </main>    
+    <!-- End of the main section -->
+    
+    <!-- Start of the footer section -->
+    <footer>
+        <div class="contentContainer">
+            <ul id="footerMenu">
+                <li><a href="index.html" class="footerLink">Home</a></li>
+                <li><a href="about.html" class="footerLink">About</a></li>
+                <li><a href="menu.html" class="footerLink">Menu</a></li>
+                <li><a href="#" class="footerLink" id="contactFooter">Contact</a></li>
+            </ul>
+        </div>
+            
+        <section id="socialIcons">
+            <a id="instagram" href="https://www.instagram.com" target="_blank"></a>
+            <a id="facebook" href="https://facebook.com" target="_blank"></a>
+            <a id="twitter" href="https://twitter.com" target="_blank"></a>
+        </section>
+            
+        <section id="weather">
+            <h4 id="weatherText"></h4>
+        </section>
+    </footer>
+    <!-- End of the footer section -->
+</body>
+</html>
